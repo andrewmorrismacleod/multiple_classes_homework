@@ -12,7 +12,7 @@ class RiverTest < MiniTest::Test
   end
 
   def test_get_fish__Stock
-    river = River.new("Ugie")
+
     fish1 = Fish.new("Stand-of")
     fish2 = Fish.new("Stock")
     fish3 = Fish.new("Monk")

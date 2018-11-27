@@ -12,6 +12,10 @@ class Bear
     @stomach.push(river.fish[0]) #Assume bear eats the first fish
   end
 
+  def roar
+    return "Rar, I'm a scary bear"
+  end
+
 
 
 end

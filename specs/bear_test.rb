@@ -34,4 +34,8 @@ class BearTest < MiniTest::Test
     assert_equal(1,bear.stomach.length)
   end
 
+  def test_roar
+    bear = Bear.new("Care", "Fictional")
+    assert_equal("Rar, I'm a scary bear", bear.roar)
+  end
 end
