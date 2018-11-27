@@ -11,4 +11,9 @@ class RiverTest < MiniTest::Test
     assert_equal("Ugie", river.name)
   end
 
+  def test_get_fish__Stock
+    river = River.new("Ugie")
+    assert_equal("Stock", river.fish[1])
+  end
+
 end
