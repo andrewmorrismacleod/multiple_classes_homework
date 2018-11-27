@@ -21,4 +21,17 @@ class BearTest < MiniTest::Test
     assert_equal(0, bear.stomach.length)
   end
 
+  def test_bear_eat_fish
+    fish1 = Fish.new("Stand-of")
+    fish2 = Fish.new("Stock")
+    fish3 = Fish.new("Monk")
+    fish = [fish1, fish2, fish3]
+    bear = Bear.new("Care", "Fictional")
+    river = River.new("Ugie", fish)
+    bear.eat_fish(river)
+    river.lose_fish(1)
+    assert_equal(2,river.fish.length)
+    assert_equal(1,bear.stomach.length)
+  end
+
 end

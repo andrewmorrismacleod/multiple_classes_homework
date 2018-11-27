@@ -8,4 +8,10 @@ class Bear
     @stomach = []
   end
 
+  def eat_fish(river)
+    @stomach.push(river.fish[0]) #Assume bear eats the first fish
+  end
+
+
+
 end
