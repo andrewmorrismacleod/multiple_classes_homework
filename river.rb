@@ -15,4 +15,8 @@ class River
 
   end
 
+  def count_fish
+    return fish.length
+  end
+
 end

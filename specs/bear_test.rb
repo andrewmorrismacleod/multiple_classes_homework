@@ -51,4 +51,5 @@ class BearTest < MiniTest::Test
     assert_equal(2, bear.stomach_count)
   end
 
+
 end
