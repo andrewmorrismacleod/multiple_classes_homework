@@ -38,4 +38,17 @@ class BearTest < MiniTest::Test
     bear = Bear.new("Care", "Fictional")
     assert_equal("Rar, I'm a scary bear", bear.roar)
   end
+
+  def test_stomach_count
+    fish1 = Fish.new("Stand-of")
+    fish2 = Fish.new("Stock")
+    fish3 = Fish.new("Monk")
+    fish = [fish1, fish2, fish3]
+    bear = Bear.new("Care", "Fictional")
+    river = River.new("Ugie", fish)
+    bear.eat_multiple_fish(river,2)
+    river.lose_fish(2)
+    assert_equal(2, bear.stomach_count)
+  end
+
 end

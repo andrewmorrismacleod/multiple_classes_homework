@@ -16,6 +16,16 @@ class Bear
     return "Rar, I'm a scary bear"
   end
 
+  def stomach_count
+    return @stomach.length
+  end
 
+  def eat_multiple_fish(river, number)
+    i = 0
+    number.times do
+      @stomach.push(river.fish[i])
+      i +=1
+    end
+  end
 
 end
