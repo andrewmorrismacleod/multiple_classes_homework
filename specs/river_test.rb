@@ -13,7 +13,12 @@ class RiverTest < MiniTest::Test
 
   def test_get_fish__Stock
     river = River.new("Ugie")
-    assert_equal("Stock", river.fish[1])
+    fish1 = Fish.new("Stand-of")
+    fish2 = Fish.new("Stock")
+    fish3 = Fish.new("Monk")
+    fish = [fish1, fish2, fish3]
+    river = River.new("Ugie", fish)
+    assert_equal("Stock", river.fish[1].name)
   end
 
 end

@@ -2,7 +2,7 @@ class River
 
   attr_reader :name, :fish
 
-  def initialize(name, fish = ["Stand-of", "Stock", "Monk"])
+  def initialize(name, fish = [])
     @name = name
     @fish = fish
   end
